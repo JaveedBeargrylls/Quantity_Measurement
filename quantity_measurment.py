@@ -29,22 +29,27 @@ class Quantity_Measurment():
             print(e)
         
     def type_of_input(self,feet):
-            try:
-                if type(feet) is int:
+        '''
+        Description: Function to get the type of input
+        Parameter : feet as parameter to calculate type
+        Return: return type
+        '''
+        try:
+            if type(feet) is int:
                     type_of = 'int'
-                else:
+            else:
                     type_of = 'str'
                     raise Exception(TypeError)
-            except Exception as e:
+        except Exception as e:
                 print(e)
-            print(type_of)
-            return type_of
+        print(type_of)
+        return type_of
 
     def calculate_inch(self,inch):
         '''
-    Description: Function to calculate the Inches to i
-    Parameter : feet as parameter to calculate inches 
-    Return: return inches
+    Description: Function to calculate the Inches to feets
+    Parameter : inch as parameter to calculate feets 
+    Return: return feets
     '''
 
         # 1 inch = 1 / 12 feet
