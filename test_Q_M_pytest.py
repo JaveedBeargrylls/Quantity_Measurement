@@ -53,7 +53,7 @@ def test_feets_type_check():
     result = feets.type_of_input(1)
     assert result == 'int'
 
-'''================ Inch to feet ================='''
+'''================ Yard to feet ================='''
 
 def test_yard_equals_zero():
     '''
